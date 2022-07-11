@@ -74,7 +74,7 @@
     "lint-staged": "^11.1.2",
     "mini-css-extract-plugin": "^2.3.0",
     "postcss": "8.3.8",
-    "postcss-loader": "^6.1.1",
+    "postcss-loader": "^7.0.1",
     "prettier": "^2.4.1",
     "simple-git-hooks": "^2.6.1",
     "source-map-loader": "3.0.0",

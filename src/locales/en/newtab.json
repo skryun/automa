@@ -208,32 +208,6 @@
       "email": "Email"
     }
   },
-      "restore": {
-        "title": "Restore workflows",
-        "button": "Restore",
-        "update": "Update if the workflow exists"
-      },
-      "cloud": {
-        "buttons": {
-          "local": "Local",
-          "cloud": "Cloud"
-        },
-        "location": "Location",
-        "delete": "Delete backup",
-        "title": "Cloud Backup",
-        "sync": "Sync",
-        "lastSync": "Last sync",
-        "lastBackup": "Last backup",
-        "select": "Select workflows",
-        "storedWorkflows": "Workflows that are stored in the cloud",
-        "selected": "Selected",
-        "selectText": "Select workflows that you want to backup",
-        "selectAll": "Select all",
-        "deselectAll": "Deselect all",
-        "needSelectWorkflow": "You need to select workflows that you want to backup"
-      }
-    }
-  },
   "workflow": {
     "events": {
       "title": "Workflow Events",

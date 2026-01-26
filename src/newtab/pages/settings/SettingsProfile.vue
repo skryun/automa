@@ -13,11 +13,9 @@
         <p class="mb-6 text-gray-600 dark:text-gray-300">
           {{ t('settings.profile.signInDesc') }}
         </p>
-        <ui-button tag="button" variant="accent" class="w-64">
-          <a href="https://extension.automa.site/auth">
-            {{ t('settings.profile.signIn') }}
-          </a>
-        </ui-button>
+        <!-- <ui-button tag="button" variant="accent" class="w-64">
+          {{ t('settings.profile.signIn') }}
+        </ui-button> -->
       </div>
     </ui-card>
 
@@ -114,21 +112,7 @@ const userEmail = computed(() => {
 const userAvatar = computed(() => {
   if (state.avatarError) return null;
 
-  const metadataAvatar = userStore.user?.user_metadata?.avatar_url;
-  if (metadataAvatar) return metadataAvatar;
-
-  const picture = userStore.user?.user_metadata?.picture;
-  if (picture) return picture;
-
-  if (userEmail.value) {
-    const emailHash = btoa(userEmail.value.toLowerCase().trim()).replace(
-      /=/g,
-      ''
-    );
-    return `https://www.gravatar.com/avatar/${emailHash}?d=identicon&s=200`;
-  }
-
-  return null;
+  return userStore.user?.avatar_url || null;
 });
 
 const userInitials = computed(() => {
